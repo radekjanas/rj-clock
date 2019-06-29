@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <title>US-PL Clock</title>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/rj-clock.css">
+    </head>
+    <body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+                    <div id="us-clock"></div>
+                    <div id="pl-clock"></div>
+				</div>
+			</div>
+		</div>
+		<script src="js/rj-clock.js"></script>
+        <script>
+            const clockUS = new rjClock('us-clock', {
+                type: 'analog',
+                style: 'light',
+                seconds: true,
+                date: false
+            }).showTime('us', -5);
+			
+            const clockPL = new rjClock('pl-clock', {
+                type: 'digital',
+                style: 'dark',
+                seconds: true,
+                date: true
+            }).showTime('pl');
+        </script>
+    </body>
+</html>

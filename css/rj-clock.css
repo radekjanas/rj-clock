@@ -1,0 +1,70 @@
+.rjc-clock-face,
+.rjc-hour-pointer,
+.rjc-minutes-pointer,
+.rjc-seconds-pointer {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+}
+
+.rjc-analog,
+.rjc-digital {
+    width: 100px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.rjc-analog *,
+.rjc-digital * {
+    margin: 0;
+    text-align: center;
+}
+
+.rjc-clock-face {
+    position: relative;
+}
+
+.rjc-dark .rjc-clock-face {
+    background-image: url('../img/clock-dark.png');
+}
+
+.rjc-light .rjc-clock-face {
+    background-image: url('../img/clock-light.png');
+}
+
+.rjc-hour-pointer,
+.rjc-minutes-pointer,
+.rjc-seconds-pointer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.rjc-hour-pointer {
+    background-image: url('../img/hour.png');
+}
+
+.rjc-minutes-pointer {
+    background-image: url('../img/minute.png');
+}
+
+.rjc-seconds-pointer {
+    background-image: url('../img/second.png');
+}
+
+.rjc-dark .rjc-date-container,
+.rjc-dark.rjc-digital .rjc-hour-container {
+    color: #3f3f3f;
+}
+
+.rjc-light .rjc-date-container,
+.rjc-light.rjc-digital .rjc-hour-container {
+    color: #f4f4f4;
+}
+
+.rjc-digital .rjc-hour-container .rjc-separator:nth-last-child(2),
+.rjc-digital .rjc-seconds {
+    color: #36e24a;
+    font-size: 12px;
+    vertical-align: top;
+}
