@@ -3,6 +3,9 @@
 rj-clock displays configurable analog or digital clock widget. It is designed in the way that includes Daylight Saving Time Changes for Poland and United States.
 This plugin has been created for one of my commercial projects.
 
+## Screenshot
+![Clock image](./screenshot.jpg)
+
 ## How to use
 
 1. Upload CSS, JS and IMG files to your project
