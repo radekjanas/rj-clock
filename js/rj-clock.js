@@ -323,7 +323,7 @@ class rjClock {
             if (outputTime.getUTCMonth() < 10) {
                 clockVals.outputMonth.innerHTML = '0' + (outputTime.getUTCMonth() + 1);
             } else {
-                clockVals.outputMonth.innerHTML = outputTime.getUTCMonth();
+                clockVals.outputMonth.innerHTML = outputTime.getUTCMonth() + 1;
             }
 
             clockVals.outputYear.innerHTML = outputTime.getUTCFullYear();
